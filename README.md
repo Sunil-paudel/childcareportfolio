@@ -1,21 +1,21 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
+# EPRO506 Digital Portfolio: Family & Community Contexts in ECE
 
-# Run and deploy your AI Studio app
-
-This contains everything you need to run your app locally.
-
-View your app in AI Studio: https://ai.studio/apps/2a05d77e-8d5b-4e15-a786-223aa9fea34b
+Professional Digital Portfolio and ECE Resource Guide exploring 5 core family and community contexts in contemporary Australia with sociological theories, policy analysis, evidence-based pedagogical strategies, partnership pathways, interactive media resources, and APA 7th references.
 
 ## Run Locally
 
-**Prerequisites:**  Node.js
-
+**Prerequisites:** Node.js (v18+)
 
 1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+   ```bash
+   npm install
+   ```
+
+2. Run the app:
+   ```bash
+   npm run dev
+   ```
+
+3. Open your browser at `http://localhost:3000`
+
 # childcareportfolio

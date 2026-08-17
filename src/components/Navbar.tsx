@@ -254,8 +254,8 @@ export const Navbar: React.FC<NavbarProps> = ({
         </div>
       )}
 
-      {/* Contexts Horizontal Quick Bar */}
-      <div className="border-t border-stone-200 bg-stone-50/90 overflow-x-auto scrollbar-none">
+      {/* Contexts Horizontal Quick Bar (Desktop Only) */}
+      <div className="hidden lg:block border-t border-stone-200 bg-stone-50/90 overflow-x-auto scrollbar-none">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex space-x-1 py-1.5 min-w-max">
           {CONTEXTS_DATA.map((context, index) => {
             const isActive = activeTab === context.id;

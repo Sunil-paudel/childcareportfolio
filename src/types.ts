@@ -67,6 +67,8 @@ export interface ContextSection {
   category: string;
   badgeColor: string;
   iconName: string;
+  imageUrl?: string;
+  imageAlt?: string;
   understanding: {
     definition: string;
     australianContext: string;

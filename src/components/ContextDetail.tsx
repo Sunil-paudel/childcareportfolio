@@ -62,7 +62,7 @@ export const ContextDetail: React.FC<ContextDetailProps> = ({
               {context.category}
             </span>
             <span className="text-xs font-semibold px-2.5 py-1 rounded-md bg-stone-100 text-stone-700 border border-stone-200">
-              EPRO506 Core Assessment Domain
+              Early Childhood Practice Domain
             </span>
           </div>
 
@@ -76,6 +76,23 @@ export const ContextDetail: React.FC<ContextDetailProps> = ({
           <p className="text-stone-700 text-sm sm:text-base leading-relaxed max-w-4xl">
             {context.understanding.definition}
           </p>
+
+          {/* Context Banner Photo */}
+          {context.imageUrl && (
+            <div className="mt-5 rounded-xl overflow-hidden border border-stone-200/90 shadow-sm relative group">
+              <img 
+                src={context.imageUrl} 
+                alt={context.imageAlt || context.title} 
+                className="w-full h-64 sm:h-80 object-cover group-hover:scale-[1.01] transition-transform duration-500" 
+              />
+              {context.imageAlt && (
+                <div className="absolute bottom-0 inset-x-0 bg-stone-950/75 backdrop-blur-xs text-stone-100 p-2.5 text-xs font-medium flex items-center space-x-2">
+                  <span className="w-2 h-2 rounded-full bg-amber-400"></span>
+                  <span>{context.imageAlt}</span>
+                </div>
+              )}
+            </div>
+          )}
 
           {/* Quick Sub-Navigation Pills */}
           <div className="mt-6 pt-5 border-t border-stone-100 flex flex-wrap items-center gap-2">

@@ -20,7 +20,7 @@ export const PrintableView: React.FC<PrintableViewProps> = ({ onBack }) => {
             <span>Return to Interactive Portfolio</span>
           </button>
           <span className="text-xs text-stone-400 font-sans hidden sm:inline">
-            Print Preview Mode (Complete 5000+ Word Academic Portfolio)
+            Print Preview Mode (Complete ECE Practice Portfolio)
           </span>
         </div>
 
@@ -36,7 +36,7 @@ export const PrintableView: React.FC<PrintableViewProps> = ({ onBack }) => {
       {/* Cover / Title Page */}
       <div className="text-center py-16 border-b border-stone-300 space-y-4">
         <p className="text-sm font-sans font-bold tracking-widest text-stone-500 uppercase">
-          EPRO506 Digital Portfolio • Assessment 3
+          Digital Practice Portfolio • ECE Resource Guide
         </p>
         <h1 className="text-3xl sm:text-4xl font-extrabold text-stone-900 leading-tight">
           Working with Children, Families, and Communities in Contemporary Society
@@ -45,9 +45,8 @@ export const PrintableView: React.FC<PrintableViewProps> = ({ onBack }) => {
           Digital Portfolio: Family and Community Contexts in Early Childhood Education
         </h2>
         <div className="pt-8 text-xs font-sans text-stone-500 space-y-1">
-          <p className="font-semibold text-stone-700">Course: EPRO506 Early Childhood Education</p>
+          <p className="font-semibold text-stone-700">Early Childhood Education Professional Practice Guide</p>
           <p>Format: Digital Portfolio & Practice Resource Guide (APA 7th Edition)</p>
-          <p>Word Count Scope: 5,000 words (1,000 words per context)</p>
         </div>
       </div>
 
@@ -62,7 +61,7 @@ export const PrintableView: React.FC<PrintableViewProps> = ({ onBack }) => {
           <li>Cultural and Diversity Contexts: First Nations, Immigrant, and Refugee Families</li>
           <li>Health and Wellbeing Contexts: Parental Mental Illness, Substance Use, Trauma, Grief, and Abuse</li>
           <li>Crisis and Emergency Contexts: Climate Disaster, Family Violence, and Displacement</li>
-          <li>Assessment Audio Presentation Transcript</li>
+          <li>Audio Presentation Transcript</li>
           <li>Comprehensive APA 7th Edition References</li>
         </ol>
       </div>
@@ -225,7 +224,7 @@ export const PrintableView: React.FC<PrintableViewProps> = ({ onBack }) => {
       {/* Full Transcript Section */}
       <section className="space-y-4 pt-8 border-t border-stone-300 page-break">
         <h2 className="text-2xl font-bold text-stone-900">
-          Assessment Audio Presentation Transcript
+          Audio Presentation Transcript
         </h2>
         <div className="space-y-4 text-xs font-serif text-stone-800">
           {TRANSCRIPT_DATA.map((tr, tIdx) => (

@@ -55,25 +55,6 @@ export const Navbar: React.FC<NavbarProps> = ({
 
   return (
     <header className="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-stone-200 shadow-xs">
-      {/* Top Banner / Assessment Meta */}
-      <div className="bg-stone-900 text-stone-100 px-4 py-2 text-xs font-medium flex flex-wrap items-center justify-between gap-2">
-        <div className="flex items-center space-x-2">
-          <span className="bg-amber-500 text-stone-950 font-bold px-2 py-0.5 rounded text-[11px] tracking-wide">
-            EPRO506 – Assessment 3
-          </span>
-          <span className="text-stone-300 hidden sm:inline">
-            Working with Children, Families, and Communities in Contemporary Society
-          </span>
-        </div>
-        <div className="flex items-center space-x-3 text-[11px] text-stone-300">
-          <span className="flex items-center gap-1">
-            <span className="w-2 h-2 rounded-full bg-emerald-400"></span>
-            APA 7th Edition Verified
-          </span>
-          <span className="text-stone-500">|</span>
-          <span>5 Core Contexts • 5000+ Words</span>
-        </div>
-      </div>
 
       {/* Main Header & Actions */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex flex-col md:flex-row items-center justify-between gap-4">
@@ -162,7 +143,7 @@ export const Navbar: React.FC<NavbarProps> = ({
           <button
             onClick={onOpenPrint}
             className="flex items-center space-x-1.5 px-3 py-1.5 text-xs font-medium text-stone-700 hover:text-stone-950 bg-white hover:bg-stone-50 border border-stone-300 rounded-lg transition-colors shadow-2xs"
-            title="Print or Export Full Assessment Portfolio"
+            title="Print or Export Full Digital Portfolio"
           >
             <Printer className="w-3.5 h-3.5 text-stone-600" />
             <span>Print / PDF View</span>

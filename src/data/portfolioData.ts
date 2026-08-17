@@ -8,6 +8,8 @@ export const CONTEXTS_DATA: ContextSection[] = [
     category: 'Context 1',
     badgeColor: 'emerald',
     iconName: 'Coins',
+    imageUrl: '/assets/context_economic.png',
+    imageAlt: 'Community Garden & Fruit Breakfast Bar in Australian ECEC Centre',
     understanding: {
       definition:
         'Economic hardship is defined as a situation in which a family’s income is insufficient to cover the fundamental costs of housing, nutritious food, health care, and daily living. In Australia, child poverty is an escalating and evolving socio-economic crisis: approximately one in six children (~757,000 children) live below the poverty line (ACOSS & UNSW Sydney, 2025).',
@@ -362,6 +364,8 @@ export const CONTEXTS_DATA: ContextSection[] = [
     category: 'Context 2',
     badgeColor: 'blue',
     iconName: 'Users',
+    imageUrl: '/assets/context_social.png',
+    imageAlt: 'Cozy Reading Nook & Primary Educator Attachment Anchor',
     understanding: {
       definition:
         'Social contexts of disadvantage encompass disruptions in a child’s relational matrix, family architecture, or community connectedness—specifically geographical/social isolation, parental separation and divorce, and placement in out-of-home care (OOHC). These phenomena form a continuum of relational disruption sharing a core developmental risk: the destabilisation of primary attachment bonds and buffering social networks during rapid brain development.',
@@ -707,6 +711,8 @@ export const CONTEXTS_DATA: ContextSection[] = [
     category: 'Context 3',
     badgeColor: 'amber',
     iconName: 'Globe',
+    imageUrl: '/assets/cultural_yarning_circle.jpg',
+    imageAlt: 'First Nations Yarning Circle & Cultural Storytelling on Wurundjeri Country',
     understanding: {
       definition:
         'Cultural and diversity contexts encompass families whose ancestral, linguistic, or cultural identities exist outside the Anglo-Australian mainstream—primarily Aboriginal and Torres Strait Islander peoples, and culturally and linguistically diverse (CALD) immigrant and refugee communities. It is critically important to resist lumping First Nations experiences under generic "multicultural diversity"; First Nations peoples are the sovereign Custodians of this unceded land dealing with ongoing colonization, whereas immigrant and refugee families navigate resettlement, migration pathways, and linguistic adaptation.',
@@ -1063,6 +1069,8 @@ export const CONTEXTS_DATA: ContextSection[] = [
     category: 'Context 4',
     badgeColor: 'rose',
     iconName: 'HeartPulse',
+    imageUrl: '/assets/context_health.png',
+    imageAlt: 'Inclusive Sensory-Friendly Early Childhood Play & Calm Zone',
     understanding: {
       definition:
         'Health and wellbeing contexts encompass complex challenges including parental mental health conditions, substance use disorders, family violence, acute/intergenerational trauma, grief, and childhood maltreatment. While frequently categorized separately in textbook literature, these factors frequently co-occur and converge on a singular neurobiological mechanism: the chronic disruption of the child’s stress-regulation architecture (Perry, 2009).',

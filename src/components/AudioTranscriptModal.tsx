@@ -94,10 +94,10 @@ export const AudioTranscriptModal: React.FC<AudioTranscriptModalProps> = ({
             </div>
             <div>
               <h3 className="text-base font-bold text-white leading-tight">
-                Digital Assessment Audio Narration & Transcript
+                Digital Audio Narration & Presentation Transcript
               </h3>
               <p className="text-xs text-stone-400">
-                EPRO506 Presentation Audio Track & Verbatim Transcript (Assessment Rubric Requirement)
+                Presentation Audio Track & Verbatim Transcript for ECE Practice Overview
               </p>
             </div>
           </div>

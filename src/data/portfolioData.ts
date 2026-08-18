@@ -700,7 +700,7 @@ export const REFERENCES_DATA: ReferenceItem[] = [
   },
   {
     "id": "ref-40",
-    "apaFormatted": "OpenAI. (2026). ChatGPT (GPT-5.6 Luna) [Large language model]. https://chatgpt.com/share/6a841e57-6ce0-83ec-96b3-0dbc322e955f. ChatGPT (OpenAI, 2026) was used to support brainstorming, language refinement, and clarification of ideas. The final content was reviewed, edited, and verified by me.",
+    "apaFormatted": "Generative AI bibiliography: OpenAI. (2026). ChatGPT (GPT-5.6 Luna) [Large language model]. https://chatgpt.com/share/6a841e57-6ce0-83ec-96b3-0dbc322e955f. ChatGPT (OpenAI, 2026) was used to support brainstorming, language refinement, and clarification of ideas. The final content was reviewed, edited, and verified by me.",
     "url": "https://chatgpt.com/share/6a841e57-6ce0-83ec-96b3-0dbc322e955f"
   }
 ];

@@ -122,6 +122,11 @@ export const PrintableView: React.FC<PrintableViewProps> = ({ onBack }) => {
             <p className="text-sm leading-relaxed text-stone-800 text-justify">
               {context.impact.ececImplications}
             </p>
+            {context.impact.hiddenDisadvantages && (
+              <p className="text-sm leading-relaxed text-stone-800 text-justify">
+                {context.impact.hiddenDisadvantages}
+              </p>
+            )}
           </div>
 
           {/* 3. Social Policy and Australian Responses */}
@@ -129,6 +134,16 @@ export const PrintableView: React.FC<PrintableViewProps> = ({ onBack }) => {
             <h3 className="text-lg font-bold text-stone-900 border-b border-stone-200 pb-1 font-serif">
               3. Social Policy & Australian Initiatives
             </h3>
+            {context.policy.systemicChallenges && (
+              <p className="text-sm leading-relaxed text-stone-800 text-justify font-serif">
+                {context.policy.systemicChallenges}
+              </p>
+            )}
+            {context.policy.practiceImplications && context.policy.practiceImplications !== context.policy.systemicChallenges && (
+              <p className="text-sm leading-relaxed text-stone-800 text-justify font-serif">
+                {context.policy.practiceImplications}
+              </p>
+            )}
             {context.policy.nationalStrategies.map((pol, pIdx) => (
               <div key={pIdx} className="bg-stone-50 p-3 rounded border border-stone-200 text-xs space-y-1">
                 <p className="font-bold text-stone-900">{pol.title} ({pol.timeframe})</p>

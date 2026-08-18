@@ -697,5 +697,10 @@ export const REFERENCES_DATA: ReferenceItem[] = [
     id: "ref-39",
     apaFormatted: "Unsplash. (2026). First aid and emergency preparedness for children in early childhood settings [Photograph]. https://images.unsplash.com/photo-1624638760852-8ede1666ab07?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjl8fGZpcnN0JTIwYWlkJTIwYm94JTIwa2lkfGVufDB8fDB8fHww",
     url: "https://images.unsplash.com/photo-1624638760852-8ede1666ab07?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjl8fGZpcnN0JTIwYWlkJTIwYm94JTIwa2lkfGVufDB8fDB8fHww"
+  },
+  {
+    "id": "ref-40",
+    "apaFormatted": "OpenAI. (2026). ChatGPT (GPT-5.6 Luna) [Large language model]. https://chatgpt.com/share/6a841e57-6ce0-83ec-96b3-0dbc322e955f. ChatGPT (OpenAI, 2026) was used to support brainstorming, language refinement, and clarification of ideas. The final content was reviewed, edited, and verified by me.",
+    "url": "https://chatgpt.com/share/6a841e57-6ce0-83ec-96b3-0dbc322e955f"
   }
 ];

@@ -263,12 +263,37 @@ export const PrintableView: React.FC<PrintableViewProps> = ({ onBack }) => {
         <h2 className="text-2xl font-bold text-stone-900">
           References
         </h2>
-        <div className="space-y-4 text-sm text-stone-800">
-          {REFERENCES_DATA.map((ref, rIdx) => (
-            <p key={rIdx} className="pl-6 -indent-6 leading-relaxed text-justify">
-              {ref.apaFormatted}
-            </p>
-          ))}
+        <div className="space-y-3 text-sm text-stone-800">
+          {REFERENCES_DATA.map((ref, rIdx) => {
+            const urlRegex = /(https?:\/\/[^\s]+)/g;
+            const parts = ref.apaFormatted.split(urlRegex);
+
+            return (
+              <div key={rIdx} className="flex items-start gap-2 leading-relaxed text-justify">
+                <span className="font-mono font-bold text-xs text-stone-600 shrink-0 w-7 pt-0.5">
+                  {rIdx + 1}.
+                </span>
+                <div className="flex-1">
+                  {parts.map((part, pIdx) => {
+                    if (part.match(urlRegex)) {
+                      return (
+                        <a
+                          key={pIdx}
+                          href={part}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-amber-900 underline font-sans text-xs break-all"
+                        >
+                          {part}
+                        </a>
+                      );
+                    }
+                    return <span key={pIdx}>{part}</span>;
+                  })}
+                </div>
+              </div>
+            );
+          })}
         </div>
       </section>
     </div>

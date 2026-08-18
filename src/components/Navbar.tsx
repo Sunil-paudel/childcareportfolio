@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-import { 
-  BookOpen, 
-  FileText, 
-  Search, 
-  Headphones, 
-  Printer, 
-  CheckSquare, 
+import {
+  BookOpen,
+  FileText,
+  Search,
+  Headphones,
+  Printer,
+  CheckSquare,
   Sparkles,
   Coins,
   Users,
@@ -34,7 +34,6 @@ export const Navbar: React.FC<NavbarProps> = ({
   onOpenSearch,
   onOpenTranscript,
   onOpenReferences,
-  onOpenToolkit,
   onOpenPrint,
   savedStrategiesCount
 }) => {
@@ -67,7 +66,7 @@ export const Navbar: React.FC<NavbarProps> = ({
 
       {/* Main Header & Actions */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex items-center justify-between">
-        <div 
+        <div
           onClick={() => handleSelectTab('economic')}
           className="cursor-pointer group flex items-center space-x-3"
         >
@@ -103,28 +102,12 @@ export const Navbar: React.FC<NavbarProps> = ({
             <Headphones className="w-3.5 h-3.5 text-amber-700" />
             <span>Audio & Transcript</span>
           </button>
-
-          <button
-            onClick={onOpenToolkit}
-            className="relative flex items-center space-x-1.5 px-3 py-1.5 text-xs font-medium text-stone-700 bg-stone-100 hover:bg-stone-200 border border-stone-200 rounded-lg transition-colors"
-            title="Interactive Educator Action Plan & Checklists"
-          >
-            <CheckSquare className="w-3.5 h-3.5 text-stone-600" />
-            <span>Educator Toolkit</span>
-            {savedStrategiesCount > 0 && (
-              <span className="w-4 h-4 bg-emerald-600 text-white rounded-full text-[10px] font-bold flex items-center justify-center">
-                {savedStrategiesCount}
-              </span>
-            )}
-          </button>
-
           <button
             onClick={onOpenReferences}
-            className={`flex items-center space-x-1.5 px-3 py-1.5 text-xs font-medium rounded-lg transition-colors border ${
-              activeTab === 'references'
-                ? 'bg-stone-900 text-white border-stone-900'
-                : 'text-stone-700 bg-stone-100 hover:bg-stone-200 border-stone-200'
-            }`}
+            className={`flex items-center space-x-1.5 px-3 py-1.5 text-xs font-medium rounded-lg transition-colors border ${activeTab === 'references'
+              ? 'bg-stone-900 text-white border-stone-900'
+              : 'text-stone-700 bg-stone-100 hover:bg-stone-200 border-stone-200'
+              }`}
           >
             <FileText className="w-3.5 h-3.5" />
             <span>APA 7th References</span>
@@ -173,86 +156,75 @@ export const Navbar: React.FC<NavbarProps> = ({
       </div>
 
       {/* Mobile Navigation Drawer (Hamburger Dropdown) */}
-      {mobileMenuOpen && (
-        <div className="lg:hidden border-t border-stone-200 bg-white shadow-xl px-4 py-4 space-y-4 animate-in slide-in-from-top-2 duration-200">
-          <div>
-            <p className="text-[11px] font-bold uppercase tracking-wider text-stone-400 mb-2 px-1">
-              Family & Community Context Sections
-            </p>
-            <div className="grid grid-cols-1 gap-1">
-              {CONTEXTS_DATA.map((context, index) => {
-                const isActive = activeTab === context.id;
-                return (
-                  <button
-                    key={context.id}
-                    onClick={() => handleSelectTab(context.id)}
-                    className={`flex items-center justify-between p-3 rounded-xl text-xs font-semibold transition-all ${
-                      isActive
+      {
+        mobileMenuOpen && (
+          <div className="lg:hidden border-t border-stone-200 bg-white shadow-xl px-4 py-4 space-y-4 animate-in slide-in-from-top-2 duration-200">
+            <div>
+              <p className="text-[11px] font-bold uppercase tracking-wider text-stone-400 mb-2 px-1">
+                Family & Community Context Sections
+              </p>
+              <div className="grid grid-cols-1 gap-1">
+                {CONTEXTS_DATA.map((context, index) => {
+                  const isActive = activeTab === context.id;
+                  return (
+                    <button
+                      key={context.id}
+                      onClick={() => handleSelectTab(context.id)}
+                      className={`flex items-center justify-between p-3 rounded-xl text-xs font-semibold transition-all ${isActive
                         ? 'bg-stone-900 text-white shadow-xs'
                         : 'text-stone-700 hover:bg-stone-100'
-                    }`}
-                  >
-                    <div className="flex items-center space-x-2.5">
-                      <span className={isActive ? 'text-amber-400' : 'text-stone-500'}>
-                        {getContextIcon(context.id)}
+                        }`}
+                    >
+                      <div className="flex items-center space-x-2.5">
+                        <span className={isActive ? 'text-amber-400' : 'text-stone-500'}>
+                          {getContextIcon(context.id)}
+                        </span>
+                        <span>{context.title}</span>
+                      </div>
+                      <span className={`text-[10px] px-2 py-0.5 rounded font-normal ${isActive ? 'bg-stone-800 text-stone-300' : 'bg-stone-100 text-stone-500'
+                        }`}>
+                        Context {index + 1}
                       </span>
-                      <span>{context.title}</span>
-                    </div>
-                    <span className={`text-[10px] px-2 py-0.5 rounded font-normal ${
-                      isActive ? 'bg-stone-800 text-stone-300' : 'bg-stone-100 text-stone-500'
-                    }`}>
-                      Context {index + 1}
-                    </span>
-                  </button>
-                );
-              })}
+                    </button>
+                  );
+                })}
 
-              <button
-                onClick={() => handleSelectTab('references')}
-                className={`flex items-center justify-between p-3 rounded-xl text-xs font-semibold transition-all ${
-                  activeTab === 'references'
+                <button
+                  onClick={() => handleSelectTab('references')}
+                  className={`flex items-center justify-between p-3 rounded-xl text-xs font-semibold transition-all ${activeTab === 'references'
                     ? 'bg-stone-900 text-white shadow-xs'
                     : 'text-stone-700 hover:bg-stone-100'
-                }`}
+                    }`}
+                >
+                  <div className="flex items-center space-x-2.5">
+                    <FileText className={`w-4 h-4 ${activeTab === 'references' ? 'text-amber-400' : 'text-stone-500'}`} />
+                    <span>APA 7th Reference Library</span>
+                  </div>
+                  <span className={`text-[10px] px-2 py-0.5 rounded font-normal ${activeTab === 'references' ? 'bg-stone-800 text-stone-300' : 'bg-stone-100 text-stone-500'
+                    }`}>
+                    33 Citations
+                  </span>
+                </button>
+              </div>
+            </div>
+
+            <div className="pt-3 border-t border-stone-100 grid grid-cols-2 gap-2">
+
+
+              <button
+                onClick={() => {
+                  onOpenPrint();
+                  setMobileMenuOpen(false);
+                }}
+                className="flex items-center justify-center space-x-1.5 p-2.5 rounded-xl bg-amber-500 hover:bg-amber-600 text-stone-950 text-xs font-bold shadow-2xs"
               >
-                <div className="flex items-center space-x-2.5">
-                  <FileText className={`w-4 h-4 ${activeTab === 'references' ? 'text-amber-400' : 'text-stone-500'}`} />
-                  <span>APA 7th Reference Library</span>
-                </div>
-                <span className={`text-[10px] px-2 py-0.5 rounded font-normal ${
-                  activeTab === 'references' ? 'bg-stone-800 text-stone-300' : 'bg-stone-100 text-stone-500'
-                }`}>
-                  33 Citations
-                </span>
+                <Printer className="w-4 h-4" />
+                <span>Print / PDF</span>
               </button>
             </div>
           </div>
-
-          <div className="pt-3 border-t border-stone-100 grid grid-cols-2 gap-2">
-            <button
-              onClick={() => {
-                onOpenToolkit();
-                setMobileMenuOpen(false);
-              }}
-              className="flex items-center justify-center space-x-1.5 p-2.5 rounded-xl bg-stone-100 hover:bg-stone-200 text-stone-800 text-xs font-bold border border-stone-200"
-            >
-              <CheckSquare className="w-4 h-4 text-emerald-600" />
-              <span>Toolkit ({savedStrategiesCount})</span>
-            </button>
-
-            <button
-              onClick={() => {
-                onOpenPrint();
-                setMobileMenuOpen(false);
-              }}
-              className="flex items-center justify-center space-x-1.5 p-2.5 rounded-xl bg-amber-500 hover:bg-amber-600 text-stone-950 text-xs font-bold shadow-2xs"
-            >
-              <Printer className="w-4 h-4" />
-              <span>Print / PDF</span>
-            </button>
-          </div>
-        </div>
-      )}
+        )
+      }
 
       {/* Contexts Horizontal Quick Bar (Desktop Only) */}
       <div className="hidden lg:block border-t border-stone-200 bg-stone-50/90 overflow-x-auto scrollbar-none">
@@ -263,11 +235,10 @@ export const Navbar: React.FC<NavbarProps> = ({
               <button
                 key={context.id}
                 onClick={() => setActiveTab(context.id)}
-                className={`flex items-center space-x-2 px-3 py-1.5 rounded-lg text-xs font-semibold tracking-tight transition-all duration-200 whitespace-nowrap ${
-                  isActive
-                    ? 'bg-stone-900 text-white shadow-xs'
-                    : 'text-stone-600 hover:text-stone-900 hover:bg-stone-200/70'
-                }`}
+                className={`flex items-center space-x-2 px-3 py-1.5 rounded-lg text-xs font-semibold tracking-tight transition-all duration-200 whitespace-nowrap ${isActive
+                  ? 'bg-stone-900 text-white shadow-xs'
+                  : 'text-stone-600 hover:text-stone-900 hover:bg-stone-200/70'
+                  }`}
               >
                 <span className={`${isActive ? 'text-amber-400' : 'text-stone-400'}`}>
                   {getContextIcon(context.id)}
@@ -279,18 +250,17 @@ export const Navbar: React.FC<NavbarProps> = ({
 
           <button
             onClick={() => setActiveTab('references')}
-            className={`flex items-center space-x-1.5 px-3 py-1.5 rounded-lg text-xs font-semibold tracking-tight transition-all duration-200 whitespace-nowrap ${
-              activeTab === 'references'
-                ? 'bg-stone-900 text-white shadow-xs'
-                : 'text-stone-600 hover:text-stone-900 hover:bg-stone-200/70'
-            }`}
+            className={`flex items-center space-x-1.5 px-3 py-1.5 rounded-lg text-xs font-semibold tracking-tight transition-all duration-200 whitespace-nowrap ${activeTab === 'references'
+              ? 'bg-stone-900 text-white shadow-xs'
+              : 'text-stone-600 hover:text-stone-900 hover:bg-stone-200/70'
+              }`}
           >
             <FileText className="w-3.5 h-3.5 text-stone-400" />
             <span>References</span>
           </button>
         </div>
       </div>
-    </header>
+    </header >
   );
 };
 

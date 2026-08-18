@@ -78,6 +78,21 @@ export const PrintableView: React.FC<PrintableViewProps> = ({ onBack }) => {
             </h2>
           </div>
 
+          {context.imageUrl && (
+            <div className={`grid grid-cols-1 ${context.secondaryImageUrl ? 'grid-cols-2' : ''} gap-4 my-3`}>
+              <div className="border border-stone-300 rounded overflow-hidden">
+                <img src={context.imageUrl} alt={context.imageAlt || context.title} className="w-full h-48 object-cover" />
+                {context.imageAlt && <p className="text-[10px] italic p-1.5 bg-stone-100 text-stone-700">{context.imageAlt}</p>}
+              </div>
+              {context.secondaryImageUrl && (
+                <div className="border border-stone-300 rounded overflow-hidden">
+                  <img src={context.secondaryImageUrl} alt={context.secondaryImageAlt || context.title} className="w-full h-48 object-cover" />
+                  {context.secondaryImageAlt && <p className="text-[10px] italic p-1.5 bg-stone-100 text-stone-700">{context.secondaryImageAlt}</p>}
+                </div>
+              )}
+            </div>
+          )}
+
           {/* 1. Understanding the Context */}
           <div className="space-y-3">
             <h3 className="text-lg font-bold text-stone-900 border-b border-stone-200 pb-1">

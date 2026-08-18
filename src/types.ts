@@ -69,6 +69,8 @@ export interface ContextSection {
   iconName: string;
   imageUrl?: string;
   imageAlt?: string;
+  secondaryImageUrl?: string;
+  secondaryImageAlt?: string;
   understanding: {
     definition: string;
     australianContext: string;

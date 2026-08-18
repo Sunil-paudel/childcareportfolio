@@ -8,8 +8,10 @@ export const CONTEXTS_DATA: ContextSection[] = [
     "category": "Context 1",
     "badgeColor": "emerald",
     "iconName": "Coins",
-    "imageUrl": "/assets/context_economic.png",
-    "imageAlt": "Community Garden & Fruit Breakfast Bar in Australian ECEC Centre",
+    "imageUrl": "https://images.unsplash.com/photo-1588075592765-2feb7de1f86d?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8c2Nob29sJTIwa2lkJTIwZWF0aW5nfGVufDB8fDB8fHww",
+    "imageAlt": "Child nutrition, food security, and mealtime inclusion in early learning settings",
+    "secondaryImageUrl": "https://images.unsplash.com/photo-1609051968500-82562b2c2b54?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjZ8fGNoaWxkcmVuJTIwc2hhcmluZyUyMHRveXN8ZW58MHx8MHx8fDA%3D",
+    "secondaryImageAlt": "Inclusive play and material resource sharing among young children in ECEC",
     "understanding": {
       "definition": "Economic hardship occurs when a family's income cannot cover housing, food, health care and daily living costs. This is a growing problem in Australia: Australian Council of Social Service and UNSW Sydney (2025) found that approximately one in six Australian children (around 757,000) live below the poverty line, driven by the end of pandemic income support and rising living costs. Single parents are over-represented among families in poverty, who receive roughly 44% less income than needed to meet the poverty line, leaving many unable to afford essentials such as textbooks, medical care or heating (Australian Council of Social Service & UNSW Sydney, 2025).",
       "australianContext": "Several sociological and developmental models help educators understand economic disadvantage. Bronfenbrenner's bioecological systems theory locates poverty in the macrosystem and exosystem \u2014 the broader economic and policy systems shaping a child's home and early childhood service (Bronfenbrenner, 1979). Bourdieu (1986) extended this by linking a lack of economic capital to a lack of social and cultural capital, creating an intergenerational disadvantage spiral. Conger and Elder's Family Stress Model explains the mechanism further: parental stress can break down parent\u2013 child relationships and, in turn, produce children's socio-emotional difficulties (Conger & Elder, 1994). Poverty in Australia is not static \u2014 it increasingly affects working families as well as those without work, driven by housing and rental costs outpacing wages (Australian Council of Social Service & UNSW Sydney, 2025).",
@@ -293,8 +295,8 @@ export const CONTEXTS_DATA: ContextSection[] = [
     "category": "Context 2",
     "badgeColor": "blue",
     "iconName": "Users",
-    "imageUrl": "/assets/context_social.png",
-    "imageAlt": "Cozy Reading Nook & Primary Educator Attachment Anchor",
+    "imageUrl": "https://images.unsplash.com/photo-1587235587172-f05eee42fdac?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjh8fGNvbWZvcnRpbmclMjBhJTIwY2hpbGQlMjIlMjBvciUyMCUyMnRlYWNoZXIlMjB0YWxraW5nJTIwdG8lMjB0b2RkbGVyfGVufDB8fDB8fHww",
+    "imageAlt": "Relational comfort, secure attachment, and primary educator support for young children in ECEC",
     "understanding": {
       "definition": "Social contexts of disadvantage include situations where a child's family relationships, household structure or social connectedness are disrupted \u2014 geographical or social isolation, parental separation and divorce, and out-of-home care (OOHC). Early childhood literature often treats these as separate \u201cissues\u201d, but they are better understood as a continuum of family disruption sharing one developmental risk: disruption of children's primary attachment relationships and social networks during a critical developmental period. Framing them together is a deliberate analytical choice that foregrounds this shared mechanism of harm rather than surface differences in cause.",
       "australianContext": "Attachment theory (Bowlby, 1969) dominates this context: disruption of the primary caregiving relationship \u2014 through parental conflict, household transition or removal to care \u2014 can affect a child's sense of security and later ability to form trusting relationships. However, an attachment-only lens risks narrowing the focus to individual family issues. Family systems theory (Minuchin, 1974) offers an alternative, viewing divorce and separation as a reorganisation of the family system rather than a single traumatic event: the impact on children depends less on the separation itself than on how the adults manage conflict and co-parenting \u2014 the \u201cdamage\u201d is not inherent in divorce but in how it is handled. Putnam's (2000) concept of social capital is more explanatory still, locating the source of harm not in the family unit itself but in the lack of informal community networks \u2014 extended family, neighbours, playgroups \u2014 that would otherwise buffer families from stress. Out-of-home care sits at the extreme end of this continuum, where the gap between adult and child perspectives is most pronounced. The AIHW reports 44,900 children in out-of-home care at 30 June 2024 (7.7 per 1,000), with Aboriginal and Torres Strait Islander children significantly over-represented at around 50 per 1,000 (20,000 children) compared with 4.6 per 1,000 for non-Indigenous children (Australian Institute of Health and Welfare, 2025a). This is not a neutral statistical imbalance; Aboriginal-led organisations such as SNAICC frame it as reflecting the legacy of forced removal policies and systemic bias in child protection decision-making, rather than as a simple \u201crisk factor\u201d.",
@@ -589,8 +591,8 @@ export const CONTEXTS_DATA: ContextSection[] = [
     "category": "Context 3",
     "badgeColor": "amber",
     "iconName": "Globe",
-    "imageUrl": "/assets/cultural_yarning_circle.jpg",
-    "imageAlt": "First Nations Yarning Circle & Cultural Storytelling on Wurundjeri Country",
+    "imageUrl": "https://images.unsplash.com/photo-1563457039413-0c39b8e8963d?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjYzfHxkaXZlcnNlJTIwcGFyZW50JTIwZWR1Y2F0b3IlMjBtZWV0aW5nfGVufDB8fDB8fHww",
+    "imageAlt": "Culturally diverse family and educator collaborative partnership in early childhood education",
     "understanding": {
       "definition": "Cultural and diversity contexts include families whose cultural, linguistic or ancestral background places them outside the Anglo-Australian \u201cmainstream\u201d \u2014 most obviously Aboriginal and Torres Strait Islander families, and immigrant and refugee families from culturally and linguistically diverse (CALD) backgrounds. These groups are often grouped together in early childhood literature under the umbrella term \u201cdiversity\u201d, but this is worth questioning: First Nations families are not a minority migrant group in a new culture; they are the original custodians of the land, dealing with the ongoing impacts of colonisation, dispossession and forced assimilation within their own country. Lumping these distinct histories together as \u201ccultural diversity\u201d risks obscuring the specific, structural nature of First Nations disadvantage beneath a more generic, easier-to-accept story of cultural difference.",
       "australianContext": "Bronfenbrenner's (1979) ecological systems theory is often applied here, placing a child's development within nested systems including family, community and culture (the macrosystem), and showing how a child's experience of an early childhood setting is shaped by cultural values, language and belief systems before they even arrive. Berry's (2005) acculturation framework is relevant for immigrant and refugee families, explaining the strategies families may adopt and predicting that outcomes are best when integration \u2014 maintaining home culture while engaging with the new one \u2014 is supported rather than merely tolerated. An \u201cacculturation\u201d lens is unsuitable for First Nations families, however, as it implies they are the ones \u201cadjusting\u201d to a foreign culture. A more fitting lens is critical and decolonising theory (Martin, 2008), which views the early childhood sector \u2014 its curriculum, assessment tools and notions of \u201cschool readiness\u201d \u2014 as historically built around Western norms, meaning the sector itself, not only the child, must change for genuine inclusion. This context is reflected in Australia's population, over one in four of whom were born overseas, and in the Aboriginal and Torres Strait Islander population, which is small but growing and concentrated in the youngest age groups. It is also changing quickly, with significant policy momentum towards self-determination and Aboriginal-led early childhood services over the last decade, alongside a shifting refugee intake that has included specific visa responses to Afghan, Ukrainian and Palestinian families (Refugee Council of Australia, 2025).",
@@ -874,8 +876,8 @@ export const CONTEXTS_DATA: ContextSection[] = [
     "category": "Context 4",
     "badgeColor": "purple",
     "iconName": "HeartPulse",
-    "imageUrl": "/assets/health_wellbeing.png",
-    "imageAlt": "Calming Sensory & Mindfulness Corner in Australian ECE Setting",
+    "imageUrl": "https://images.unsplash.com/photo-1587323655395-b1c77a12c89a?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHBsYXklMjBzY2hvb2x8ZW58MHx8MHx8fDA%3D",
+    "imageAlt": "Active play supporting physical and emotional wellbeing in early learning settings",
     "understanding": {
       "definition": "Early childhood literature typically frames health and wellbeing issues as four distinct categories: parental mental illness, substance use, trauma and grief, and abuse. This separation is analytically convenient but empirically weak, since these factors frequently co-occur and share a common mechanism of harm \u2014 chronic disruption of the child's stress-regulation system (Perry, 2009).",
       "australianContext": "Treating them separately risks four superficial overviews instead of one coherent account of their shared developmental significance. Two lenses dominate this context: toxic stress theory (National Scientific Council on the Developing Child, 2005) and attachment theory (Bowlby, 1969). Combined, they risk over-determinism: not all children of parents with mental illness or substance dependence experience poor outcomes, and a stable second caregiver or early intervention can substantially mitigate risk (Reupert & Maybery, 2016). A deficit-based reading \u2014 parent unwell, therefore child harmed \u2014 is both empirically inaccurate and counterproductive, risking exactly the stigmatising, surveillance-like response parents fear. The more defensible position is that risk exists but is mediated by protective factors, and services should be built around strengthening those factors rather than identifying risk.",
@@ -1159,8 +1161,8 @@ export const CONTEXTS_DATA: ContextSection[] = [
     "category": "Context 5",
     "badgeColor": "rose",
     "iconName": "AlertTriangle",
-    "imageUrl": "/assets/crisis_emergency.png",
-    "imageAlt": "Trauma-Informed Emergency Kit & Quiet Sanctuary Space",
+    "imageUrl": "https://images.unsplash.com/photo-1624638760852-8ede1666ab07?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjl8fGZpcnN0JTIwYWlkJTIwYm94JTIwa2lkfGVufDB8fDB8fHww",
+    "imageAlt": "First aid and emergency preparedness for children in early childhood settings",
     "understanding": {
       "definition": "Early childhood literature often portrays crisis and emergency situations as discrete \u201cevents\u201d \u2014 climate and natural disasters, family violence, displacement. This framing needs examining: many Australian children live amid crises created by overlapping systemic failures \u2014 under-investment in disaster-resilient housing, a critical lack of family violence refuge capacity, and a housing market that fails displaced families. Viewing these as separate emergencies obscures the root cause: households with the fewest financial and social resources are consistently the least prepared to cope with, or recover from, disruption (Fothergill & Peek, 2004).",
       "australianContext": "Toxic stress and trauma theory (National Scientific Council on the Developing Child, 2005; Perry, 2009) is the prevailing developmental perspective, explaining why acute crisis exposure can have the same impact as chronic adversity when a child's caregiving environment is also destabilised. This lens is useful but limited, showing how an individual child may be harmed while offering little insight into why some communities face repeated crises and others do not. A structural vulnerability framework adds an important dimension, framing disaster and displacement impacts as a function of pre-existing inequality \u2014 housing precarity, income, geographic location \u2014 rather than random misfortune: the same \u201cnatural\u201d disaster has very different consequences depending on a family's prior material buffer.",
@@ -1202,7 +1204,8 @@ export const CONTEXTS_DATA: ContextSection[] = [
       "nationalStrategies": [
         {
           "title": "Crisis & Emergency Contexts National Policy Framework",
-          "timeframe": "2022\u20132034 National Initiatives",
+          "governingBody": "Australian Government / Department of Social Services",
+          "timeframe": "2022–2034 National Initiatives",
           "keyStatistics": "The National Plan to End Violence against Women and Children 2022\u20132032 explicitly acknowledges children as victim-survivors of family violence rather than passive witnesses \u2014 a positive policy shift \u2014 yet ongoing data on children turned away from homelessness services suggests recognition is now outpacing funded capacity. Similarly, the National Agreement on Social Housing and Homelessness (in effect from 1 July 2024) sets outcome measures for reducing homelessness, but the number of specialist homelessness clients affected by family and domestic violence has risen in absolute terms even as their proportion of the overall client base has slightly decreased (Australian Institute of Health and Welfare, 2025b) \u2014 reflecting a shift in client composition rather than a genuine decline in affected families. Findings on \u2018secondary crises\u2019, where disaster recovery activity displaces already housing-insecure residents, reveal a real gap: disaster response planning is not yet well integrated with homelessness and housing policy, despite the two clearly interacting in practice (Homelessness Australia, 2025).",
           "impactOnECE": "The National Plan to End Violence against Women and Children 2022\u20132032 explicitly acknowledges children as victim-survivors of family violence rather than passive witnesses \u2014 a positive policy shift \u2014 yet ongoing data on children turned away from homelessness services suggests recognition is now outpacing funded capacity. Similarly, the National Agreement on Social Housing and Homelessness (in effect from 1 July 2024) sets outcome measures for reducing homelessness, but the number of specialist homelessness clients affected by family and domestic violence has risen in absolute terms even as their proportion of the overall client base has slightly decreased (Australian Institute of Health and Welfare, 2025b) \u2014 reflecting a shift in client composition rather than a genuine decline in affected families. Findings on \u2018secondary crises\u2019, where disaster recovery activity displaces already housing-insecure residents, reveal a real gap: disaster response planning is not yet well integrated with homelessness and housing policy, despite the two clearly interacting in practice (Homelessness Australia, 2025)."
         }
@@ -1828,6 +1831,78 @@ export const REFERENCES_DATA: ReferenceItem[] = [
     "apaFormatted": "Reupert, A., & Maybery, D. (2016). What do we know about families where parents have a mental illness? A systematic review. Child & Youth Services, 37(2), 98\u2013111.",
     "relatedContextIds": [
       "health"
+    ]
+  },
+  {
+    "id": "ref-34",
+    "authors": "Unsplash Photography Collection",
+    "year": "2026",
+    "title": "Child nutrition, food security and mealtime inclusion in educational settings [Photograph]",
+    "source": "Unsplash",
+    "url": "https://images.unsplash.com/photo-1588075592765-2feb7de1f86d?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8c2Nob29sJTIwa2lkJTIwZWF0aW5nfGVufDB8fDB8fHww",
+    "apaFormatted": "Unsplash. (2026). Child nutrition, food security and mealtime inclusion in educational settings [Photograph]. https://images.unsplash.com/photo-1588075592765-2feb7de1f86d?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8c2Nob29sJTIwa2lkJTIwZWF0aW5nfGVufDB8fDB8fHww",
+    "relatedContextIds": [
+      "economic"
+    ]
+  },
+  {
+    "id": "ref-35",
+    "authors": "Unsplash Photography Collection",
+    "year": "2026",
+    "title": "Inclusive play and material resource sharing among young children in ECEC [Photograph]",
+    "source": "Unsplash",
+    "url": "https://images.unsplash.com/photo-1609051968500-82562b2c2b54?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjZ8fGNoaWxkcmVuJTIwc2hhcmluZyUyMHRveXN8ZW58MHx8MHx8fDA%3D",
+    "apaFormatted": "Unsplash. (2026). Inclusive play and material resource sharing among young children in ECEC [Photograph]. https://images.unsplash.com/photo-1609051968500-82562b2c2b54?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjZ8fGNoaWxkcmVuJTIwc2hhcmluZyUyMHRveXN8ZW58MHx8MHx8fDA%3D",
+    "relatedContextIds": [
+      "economic"
+    ]
+  },
+  {
+    "id": "ref-36",
+    "authors": "Unsplash Photography Collection",
+    "year": "2026",
+    "title": "Relational comfort, secure attachment and responsive educator-child interaction [Photograph]",
+    "source": "Unsplash",
+    "url": "https://images.unsplash.com/photo-1587235587172-f05eee42fdac?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjh8fGNvbWZvcnRpbmclMjBhJTIwY2hpbGQlMjIlMjBvciUyMCUyMnRlYWNoZXIlMjB0YWxraW5nJTIwdG8lMjB0b2RkbGVyfGVufDB8fDB8fHww",
+    "apaFormatted": "Unsplash. (2026). Relational comfort, secure attachment and responsive educator-child interaction [Photograph]. https://images.unsplash.com/photo-1587235587172-f05eee42fdac?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjh8fGNvbWZvcnRpbmclMjBhJTIwY2hpbGQlMjIlMjBvciUyMCUyMnRlYWNoZXIlMjB0YWxraW5nJTIwdG8lMjB0b2RkbGVyfGVufDB8fDB8fHww",
+    "relatedContextIds": [
+      "social"
+    ]
+  },
+  {
+    "id": "ref-37",
+    "authors": "Unsplash Photography Collection",
+    "year": "2026",
+    "title": "Culturally diverse family and educator collaborative partnership in early childhood education [Photograph]",
+    "source": "Unsplash",
+    "url": "https://images.unsplash.com/photo-1563457039413-0c39b8e8963d?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjYzfHxkaXZlcnNlJTIwcGFyZW50JTIwZWR1Y2F0b3IlMjBtZWV0aW5nfGVufDB8fDB8fHww",
+    "apaFormatted": "Unsplash. (2026). Culturally diverse family and educator collaborative partnership in early childhood education [Photograph]. https://images.unsplash.com/photo-1563457039413-0c39b8e8963d?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjYzfHxkaXZlcnNlJTIwcGFyZW50JTIwZWR1Y2F0b3IlMjBtZWV0aW5nfGVufDB8fDB8fHww",
+    "relatedContextIds": [
+      "cultural"
+    ]
+  },
+  {
+    "id": "ref-38",
+    "authors": "Unsplash Photography Collection",
+    "year": "2026",
+    "title": "Active outdoor play supporting physical and emotional wellbeing in early learning settings [Photograph]",
+    "source": "Unsplash",
+    "url": "https://images.unsplash.com/photo-1587323655395-b1c77a12c89a?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHBsYXklMjBzY2hvb2x8ZW58MHx8MHx8fDA%3D",
+    "apaFormatted": "Unsplash. (2026). Active outdoor play supporting physical and emotional wellbeing in early learning settings [Photograph]. https://images.unsplash.com/photo-1587323655395-b1c77a12c89a?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHBsYXklMjBzY2hvb2x8ZW58MHx8MHx8fDA%3D",
+    "relatedContextIds": [
+      "health"
+    ]
+  },
+  {
+    "id": "ref-39",
+    "authors": "Unsplash Photography Collection",
+    "year": "2026",
+    "title": "First aid and emergency preparedness for children in early childhood settings [Photograph]",
+    "source": "Unsplash",
+    "url": "https://images.unsplash.com/photo-1624638760852-8ede1666ab07?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjl8fGZpcnN0JTIwYWlkJTIwYm94JTIwa2lkfGVufDB8fDB8fHww",
+    "apaFormatted": "Unsplash. (2026). First aid and emergency preparedness for children in early childhood settings [Photograph]. https://images.unsplash.com/photo-1624638760852-8ede1666ab07?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjl8fGZpcnN0JTIwYWlkJTIwYm94JTIwa2lkfGVufDB8fDB8fHww",
+    "relatedContextIds": [
+      "crisis"
     ]
   }
 ];

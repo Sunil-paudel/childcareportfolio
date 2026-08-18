@@ -77,18 +77,40 @@ export const ContextDetail: React.FC<ContextDetailProps> = ({
             {context.understanding.definition}
           </p>
 
-          {/* Context Banner Photo */}
+          {/* Context Banner Photos */}
           {context.imageUrl && (
-            <div className="mt-5 rounded-xl overflow-hidden border border-stone-200/90 shadow-sm relative group">
-              <img 
-                src={context.imageUrl} 
-                alt={context.imageAlt || context.title} 
-                className="w-full h-64 sm:h-80 object-cover group-hover:scale-[1.01] transition-transform duration-500" 
-              />
-              {context.imageAlt && (
-                <div className="absolute bottom-0 inset-x-0 bg-stone-950/75 backdrop-blur-xs text-stone-100 p-2.5 text-xs font-medium flex items-center space-x-2">
-                  <span className="w-2 h-2 rounded-full bg-amber-400"></span>
-                  <span>{context.imageAlt}</span>
+            <div className={`mt-5 grid grid-cols-1 ${context.secondaryImageUrl ? 'md:grid-cols-2' : ''} gap-4`}>
+              <div className="rounded-xl overflow-hidden border border-stone-200/90 shadow-xs relative group">
+                <div className="aspect-video w-full overflow-hidden bg-stone-100">
+                  <img 
+                    src={context.imageUrl} 
+                    alt={context.imageAlt || context.title} 
+                    className="w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-500" 
+                  />
+                </div>
+                {context.imageAlt && (
+                  <div className="absolute bottom-0 inset-x-0 bg-stone-950/75 backdrop-blur-sm text-stone-100 p-2.5 text-xs font-medium flex items-center space-x-2">
+                    <span className="w-2 h-2 rounded-full bg-amber-400 shrink-0"></span>
+                    <span>{context.imageAlt}</span>
+                  </div>
+                )}
+              </div>
+
+              {context.secondaryImageUrl && (
+                <div className="rounded-xl overflow-hidden border border-stone-200/90 shadow-xs relative group">
+                  <div className="aspect-video w-full overflow-hidden bg-stone-100">
+                    <img 
+                      src={context.secondaryImageUrl} 
+                      alt={context.secondaryImageAlt || context.title} 
+                      className="w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-500" 
+                    />
+                  </div>
+                  {context.secondaryImageAlt && (
+                    <div className="absolute bottom-0 inset-x-0 bg-stone-950/75 backdrop-blur-sm text-stone-100 p-2.5 text-xs font-medium flex items-center space-x-2">
+                      <span className="w-2 h-2 rounded-full bg-emerald-400 shrink-0"></span>
+                      <span>{context.secondaryImageAlt}</span>
+                    </div>
+                  )}
                 </div>
               )}
             </div>

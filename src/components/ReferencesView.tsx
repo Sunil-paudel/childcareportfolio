@@ -1,15 +1,15 @@
 import React, { useState } from 'react';
 import { REFERENCES_DATA } from '../data/portfolioData';
-import { 
-  FileText, 
-  Search, 
-  Copy, 
-  Check, 
-  ExternalLink, 
-  BookMarked, 
-  Filter, 
+import {
+  FileText,
+  Search,
+  Copy,
+  Check,
+  ExternalLink,
+  BookMarked,
+  Filter,
   Sparkles,
-  ArrowUpRight 
+  ArrowUpRight
 } from 'lucide-react';
 
 interface ReferencesViewProps {
@@ -23,7 +23,7 @@ export const ReferencesView: React.FC<ReferencesViewProps> = ({ onSelectContext 
   const [copiedAll, setCopiedAll] = useState(false);
 
   const filters = [
-    { id: 'all', label: 'All References (33)' },
+    { id: 'all', label: 'All References (39)' },
     { id: 'economic', label: 'Economic Contexts' },
     { id: 'social', label: 'Social Contexts' },
     { id: 'cultural', label: 'Cultural Contexts' },
@@ -113,11 +113,10 @@ export const ReferencesView: React.FC<ReferencesViewProps> = ({ onSelectContext 
               <button
                 key={filter.id}
                 onClick={() => setSelectedFilter(filter.id)}
-                className={`px-3 py-1.5 rounded-lg text-xs font-semibold whitespace-nowrap transition-colors ${
-                  selectedFilter === filter.id
+                className={`px-3 py-1.5 rounded-lg text-xs font-semibold whitespace-nowrap transition-colors ${selectedFilter === filter.id
                     ? 'bg-stone-900 text-white shadow-2xs'
                     : 'bg-stone-100 text-stone-600 hover:bg-stone-200'
-                }`}
+                  }`}
               >
                 {filter.label}
               </button>

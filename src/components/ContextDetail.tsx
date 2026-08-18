@@ -4,15 +4,15 @@ import { TheoryCard } from './TheoryCard';
 import { StrategyCard } from './StrategyCard';
 import { PartnerCard } from './PartnerCard';
 import { ProgramCard, StorybookCard, MediaCard } from './ResourceCard';
-import { 
-  BookOpen, 
-  Brain, 
-  HeartHandshake, 
-  Landmark, 
-  Lightbulb, 
-  Users, 
-  Library, 
-  CheckCircle2, 
+import {
+  BookOpen,
+  Brain,
+  HeartHandshake,
+  Landmark,
+  Lightbulb,
+  Users,
+  Library,
+  CheckCircle2,
   ArrowRight,
   TrendingUp,
   AlertTriangle,
@@ -55,7 +55,7 @@ export const ContextDetail: React.FC<ContextDetailProps> = ({
       {/* Context Hero Card */}
       <div className="bg-white rounded-2xl border border-stone-200/90 p-6 sm:p-8 shadow-xs relative overflow-hidden">
         <div className="absolute top-0 right-0 w-64 h-64 bg-gradient-to-bl from-amber-100/40 via-transparent to-transparent rounded-bl-full pointer-events-none" />
-        
+
         <div className="relative z-10">
           <div className="flex flex-wrap items-center gap-2 mb-3">
             <span className="text-xs font-bold uppercase tracking-wider px-2.5 py-1 rounded-md bg-stone-900 text-amber-400">
@@ -82,10 +82,10 @@ export const ContextDetail: React.FC<ContextDetailProps> = ({
             <div className={`mt-5 grid grid-cols-1 ${context.secondaryImageUrl ? 'md:grid-cols-2' : ''} gap-4`}>
               <div className="rounded-xl overflow-hidden border border-stone-200/90 shadow-xs relative group">
                 <div className="aspect-video w-full overflow-hidden bg-stone-100">
-                  <img 
-                    src={context.imageUrl} 
-                    alt={context.imageAlt || context.title} 
-                    className="w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-500" 
+                  <img
+                    src={context.imageUrl}
+                    alt={context.imageAlt || context.title}
+                    className="w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-500"
                   />
                 </div>
                 {context.imageAlt && (
@@ -99,10 +99,10 @@ export const ContextDetail: React.FC<ContextDetailProps> = ({
               {context.secondaryImageUrl && (
                 <div className="rounded-xl overflow-hidden border border-stone-200/90 shadow-xs relative group">
                   <div className="aspect-video w-full overflow-hidden bg-stone-100">
-                    <img 
-                      src={context.secondaryImageUrl} 
-                      alt={context.secondaryImageAlt || context.title} 
-                      className="w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-500" 
+                    <img
+                      src={context.secondaryImageUrl}
+                      alt={context.secondaryImageAlt || context.title}
+                      className="w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-500"
                     />
                   </div>
                   {context.secondaryImageAlt && (
@@ -125,11 +125,10 @@ export const ContextDetail: React.FC<ContextDetailProps> = ({
               <button
                 key={tab.id}
                 onClick={() => setActiveSubSection(tab.id as any)}
-                className={`px-3 py-1 rounded-lg text-xs font-semibold transition-all ${
-                  activeSubSection === tab.id
-                    ? 'bg-stone-900 text-white shadow-2xs'
-                    : 'bg-stone-100 text-stone-600 hover:bg-stone-200 hover:text-stone-900'
-                }`}
+                className={`px-3 py-1 rounded-lg text-xs font-semibold transition-all ${activeSubSection === tab.id
+                  ? 'bg-stone-900 text-white shadow-2xs'
+                  : 'bg-stone-100 text-stone-600 hover:bg-stone-200 hover:text-stone-900'
+                  }`}
               >
                 {tab.label}
               </button>
@@ -161,25 +160,10 @@ export const ContextDetail: React.FC<ContextDetailProps> = ({
               <Landmark className="w-4 h-4 text-amber-700" />
               Contemporary Australian Socio-Economic Landscape:
             </h4>
-            <p className="text-sm text-stone-700 leading-relaxed">
-              {context.understanding.australianContext}
-            </p>
+
             <div className="bg-amber-50/60 p-3 rounded-lg border border-amber-200/60 text-xs text-amber-950 font-medium">
               <span className="font-bold">Evolving Nature in Australia: </span>
               {context.understanding.evolvingNature}
-            </div>
-          </div>
-
-          {/* Sociological Theories Cards Grid */}
-          <div>
-            <h4 className="text-sm font-bold uppercase tracking-wider text-stone-900 mb-4 flex items-center gap-2">
-              <Brain className="w-4 h-4 text-amber-700" />
-              Sociological Theories & Developmental Models:
-            </h4>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-              {context.understanding.theories.map((theory, idx) => (
-                <TheoryCard key={idx} theory={theory} index={idx} />
-              ))}
             </div>
           </div>
         </section>
@@ -443,11 +427,10 @@ export const ContextDetail: React.FC<ContextDetailProps> = ({
         <button
           onClick={onPrevContext}
           disabled={isFirst}
-          className={`flex items-center space-x-2 px-4 py-2 rounded-xl text-xs font-bold transition-all ${
-            isFirst
-              ? 'opacity-40 cursor-not-allowed text-stone-400 bg-stone-100'
-              : 'text-stone-700 bg-white hover:bg-stone-100 border border-stone-300 shadow-2xs'
-          }`}
+          className={`flex items-center space-x-2 px-4 py-2 rounded-xl text-xs font-bold transition-all ${isFirst
+            ? 'opacity-40 cursor-not-allowed text-stone-400 bg-stone-100'
+            : 'text-stone-700 bg-white hover:bg-stone-100 border border-stone-300 shadow-2xs'
+            }`}
         >
           <span>← Previous Context</span>
         </button>
@@ -459,11 +442,10 @@ export const ContextDetail: React.FC<ContextDetailProps> = ({
         <button
           onClick={onNextContext}
           disabled={isLast}
-          className={`flex items-center space-x-2 px-4 py-2 rounded-xl text-xs font-bold transition-all ${
-            isLast
-              ? 'opacity-40 cursor-not-allowed text-stone-400 bg-stone-100'
-              : 'text-white bg-stone-900 hover:bg-stone-800 shadow-xs'
-          }`}
+          className={`flex items-center space-x-2 px-4 py-2 rounded-xl text-xs font-bold transition-all ${isLast
+            ? 'opacity-40 cursor-not-allowed text-stone-400 bg-stone-100'
+            : 'text-white bg-stone-900 hover:bg-stone-800 shadow-xs'
+            }`}
         >
           <span>Next Context →</span>
         </button>
